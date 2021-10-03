@@ -1,0 +1,25 @@
+use database_name  -> Create new Database or connect to existing database.
+
+db -> Check the currently connected database.
+
+show dbs -> List down all the databases and their size on the disk.
+
+db.dropDatabase() -> Deletes the currently connected database.
+
+db.collection_name.insert({key: value}) -> Create a collection and add document in currently connected database or add 
+a document if the collection_name exists.
+
+db.collection_name.find() -> Shows all the documents in the given collection_name.
+
+db.createCollection(collection_name, options) -> Create a collection without any document in the current database.
+
+db.collection_name.drop() -> Drops the given collection_name
+
+db.collection_name.find().forEach(printjson) / db.collection_name.find().pretty() -> Prints the data in JSON format.
+
+db.collection_name.remove({namae: "ABCD"}) -> Deletes a document from the given collection_name based on the criteria
+
+db.collection_name.remove(delete_criteria, justOne) -> Deletes only one document from the given collection_name based on the criteria
+
+db.collection_name.remove({}) -> Removes all the document from the given collection_name
+
